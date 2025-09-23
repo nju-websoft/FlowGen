@@ -3,8 +3,7 @@
 # You can use 2B instead of 7B
 # MODEL_NAME="Qwen/Qwen2-VL-7B-Instruct"
 # MODEL_NAME="Qwen/Qwen2-VL-2B-Instruct"
-MODEL_NAME="/home/xli/models/Qwen2.5-VL-3B-Instruct"
-# MODEL_NAME="Qwen/Qwen2.5-VL-7B-Instruct"
+MODEL_NAME="Qwen/Qwen2.5-VL-7B-Instruct"
 
 export PYTHONPATH=src:$PYTHONPATH
 
@@ -18,8 +17,8 @@ deepspeed src/train/train_sft.py \
     --use_liger True \
     --deepspeed scripts/zero3_offload.json \
     --model_id $MODEL_NAME \
-    --data_path /home/xli/skw/Visual_QA/complex_flowchart/Train/data/sft_data.json \
-    --image_folder /home/xli/skw/Visual_QA/FlowchartBench/Flowchart_Bench/train \
+    --data_path / \
+    --image_folder / \
     --remove_unused_columns False \
     --freeze_vision_tower False \
     --freeze_llm False \

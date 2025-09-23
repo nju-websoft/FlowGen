@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # You can use 2B instead of 7B
-# MODEL_NAME="/home/xli/models/Qwen2.5-VL-3B-Instruct"
-MODEL_NAME="/home/xli/models/Qwen2.5-VL-7B-Instruct"
+MODEL_NAME="/your/path/to/Qwen2.5-VL-7B-Instruct"
 
 export PYTHONPATH=src:$PYTHONPATH
 export CUDA_VISIBLE_DEVICES=6
@@ -30,7 +29,7 @@ deepspeed --master_port $MASTER_PORT src/train/train_sft.py \
     --num_lora_modules -1 \
     --deepspeed scripts/zero3_offload.json \
     --model_id $MODEL_NAME \
-    --data_path /home/xli/skw/Visual_QA/complex_flowchart/Train/data/sft_data/Qwen2.5_vl_sft_data/5760_Flowchart_Bench_4x.json \
+    --data_path /your/path/to/dataset \
     --image_folder None \
     --remove_unused_columns False \
     --freeze_vision_tower False \
@@ -39,7 +38,7 @@ deepspeed --master_port $MASTER_PORT src/train/train_sft.py \
     --bf16 True \
     --fp16 False \
     --disable_flash_attn2 False \
-    --output_dir output/Qwen2.5_vl_7B/finetune_lora/5760_Flowchart_Bench_4x \
+    --output_dir output/ \
     --num_train_epochs 1 \
     --per_device_train_batch_size $BATCH_PER_DEVICE \
     --gradient_accumulation_steps $GRAD_ACCUM_STEPS \
