@@ -1,21 +1,20 @@
-# 🌟FlowGen
+# 🌟 FlowGen
 
-FlowGen is a controllable flowchart synthesizer that generates diagrams with tunable structural features and supports multiple rendering styles.
+FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 
 
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowGen) is publicly available on Hugging Face. It contains:
-- [`train`]: 11520 samples with gold-standard triplt
-- [`test`]: 8640 samples with gold-standard triplt
+- [`train`]: 11520 samples with gold-standard triplet
+- [`test`]: 8640 samples with gold-standard triplet
 
 ---
 
 
 ## 👋 Flowchart Synthesizer
-We provide an automated pipeline for synthesizing flowcharts with different structural configurations. The generator supports four rendering backends:
+We provide an automated pipeline for synthesizing flowcharts with different structural configurations. The synthesizer supports four rendering backends:
 - [`Mermaid`](https://mermaid-js.github.io/)
-
 - [`Graphviz`](https://graphviz.org/)
 - [`PlantUML`](https://plantuml.com/)
 - [`Diagrams`](https://diagrams.mingrammer.com/)
@@ -23,7 +22,7 @@ We provide an automated pipeline for synthesizing flowcharts with different stru
 ### Configuration
 Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`](Synthesizer/examples.yaml). The following parameters are supported:
 
-- `count`: number of flowcharts to generate  
+- `count`: number of flowcharts to synthesize  
 - `order`: number of nodes  
 - `split_arrow`: number of split arrows  
 - `merge_arrow`: number of merge arrows  
@@ -40,30 +39,32 @@ Rendering implementations for all four backends are located in [`Synthesizer/ren
 ---
 
 ## 🤖 Automatic Flowchart Construction
-To generate flowcharts, first configure `examples.yaml`. Then run:
+To synthesize flowcharts, please first configure `examples.yaml`. Then run:
 ```bash
-python main.py examples.yaml --backend mermaid --difficulty easy --start_index 201
+python main.py examples.yaml --backend mermaid --difficulty easy --scanned_style_difficulty easy --start_index 201
 ```
 Arguments:
 - --backend (optional): specify the renderer (e.g., mermaid, graphviz, plantuml, diagrams)
 
 - --difficulty (optional): specify structural difficulty of the graph
 
-- --start_index (optional): starting index for naming generated flowcharts
+- --scanned_style_difficulty (optional): specify scanned-style difficulty of the graph
+
+- --start_index (optional): starting index for naming synthesized flowcharts
 
 ---
 
-## 🛠️ Code-to-Triple Parser
-This repository provides a parser that extracts structured triples from rendered flowchart code.
+## 🛠️ Code-to-Triplet Parser
+This repository provides a parser that extracts structured triplet from rendered flowchart code.
 The parser automatically detects the backend from the file suffix.
 
-Run the following command, where `/path/to/dataset` is the root directory of generated flowcharts:
+Run the following command, where `/path/to/dataset` is the root directory of synthesized flowcharts:
 ```
 python batch_extract_triples.py /path/to/datset
 ```
 ## 🔥 MLLMs Training
 Fine-tuning scripts are provided for multimodal large language models (MLLMs).
-After configuring your model path and dataset JSON, run:
+After configuring your model path and path to dataset in json format, run:
 ```
 cd MLLMs-SFT
 cd Qwen2-VL-Finetune
@@ -84,7 +85,7 @@ You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tun
 cd FlowGen-Eval
 python eval.py --/path/to/input.json --/path/to/output.json
 ```
-We also provide evaluation with Relaxed F1:
+We also provide evaluation with **Relaxed F1**:
 ```
 cd FlowGen-Eval
 python edit_sim.py --/path/to/input.json --/path/to/output.json

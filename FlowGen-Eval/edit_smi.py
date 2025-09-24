@@ -6,7 +6,7 @@ import argparse
 Triple = Tuple[str, str, str]
 
 def edit_sim(a: str, b: str) -> float:
-    """编辑距离相似度: 1 - edit_distance/max_len"""
+    # Edit distance similarity: 1 - edit_distance / max_len
     if not a and not b:
         return 1.0
     max_len = max(len(a), len(b))
@@ -21,28 +21,28 @@ def match_pred_to_gt(pred_count: List[Triple], gt_count: List[Triple], threshold
     for pred in pred_count:
         h1, l1, t1 = pred
 
-        # step1: head过滤
+        # step1: head filtering
         candidate_heads = []
         for idx, gt in enumerate(gt_count):
             h2, l2, t2 = gt
             if edit_sim(h1, h2) >= threshold:
                 candidate_heads.append((idx, gt))
 
-        # step2: label过滤
+        # step2: label filtering
         candidate_labels = []
         for idx, gt in candidate_heads:
             h2, l2, t2 = gt
             if edit_sim(l1, l2) >= threshold:
                 candidate_labels.append((idx, gt))
 
-        # step3: tail过滤
+        # step3: tail filtering
         final_candidates = []
         for idx, gt in candidate_labels:
             h2, l2, t2 = gt
             if edit_sim(t1, t2) >= threshold:
                 final_candidates.append((idx, gt))
 
-        # 如果有多个候选，取第一个未被匹配过的gt
+        # If there are multiple candidates, take the first unmatched ground truth
         match = None
         for idx, gt in final_candidates:
             if idx not in matched_gt:
@@ -114,7 +114,7 @@ if __name__ == "__main__":
             print(f" Matched pairs: {matched_pairs}\n")
 
 
-    # 整体平均指标
+    # Overall average pred, recall and F1
     mean_prec = sum(all_prec) / len(all_prec) if all_prec else 0.0
     mean_rec = sum(all_rec) / len(all_rec) if all_rec else 0.0
     mean_f1 = sum(all_f1) / len(all_f1) if all_f1 else 0.0

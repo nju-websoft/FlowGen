@@ -1,4 +1,4 @@
-# 定义不同难度的配置
+# Configuration for graph structures of three difficulty levels
 difficulty_ranges = {
     "easy": {
         "order": "small",
@@ -29,7 +29,7 @@ difficulty_ranges = {
     }
 }
 
-# 扫描风格的不同难度配置
+# Configuration for scanned-style graphs with three difficulty levels
 scanned_style_difficulty = {
     "easy": {
         "enable": True,

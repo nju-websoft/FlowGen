@@ -5,8 +5,8 @@ from diagrams import Diagram, Cluster, Edge
 from diagrams.programming.flowchart import (
     InputOutput, Action, PredefinedProcess,
     Database, MultipleDocuments, Preparation, Document,
-    Decision,Display,Inspection,InternalStorage,
-    LoopLimit,ManualLoop,ManualInput,StartEnd
+    Decision, Display, Inspection, InternalStorage,
+    LoopLimit, ManualLoop, ManualInput, StartEnd
 )
 from interfaces import IGraphRenderer
 from shutil import copyfile
@@ -39,16 +39,16 @@ def generate_dot_source(config, direction):
 
     group_to_nodes = {}
 
-    # 建立一个 id -> node_config 的索引字典
+    # Build an index dict: id -> node_config
     id_to_node = {node['id']: node for node in nodes_cfg}
 
-    # 记录每个 group 下的节点 ID
+    # Record node IDs under each group
     for subgraph in subgraphs_cfg:
         group = subgraph.get('label')
         for node_id in subgraph['nodes']:
             group_to_nodes.setdefault(group, []).append(node_id)
 
-    # 记录所有已处理节点 ID
+    # Render all nodes
     for node_id, node in id_to_node.items():
         if "nest" in node_id:
             continue
@@ -67,7 +67,7 @@ def generate_dot_source(config, direction):
         lines.append(line)
     
 
-    # 输出子图结构
+    # Render subgraph structure
     for group, node_ids in group_to_nodes.items():
         if group:
             lines.append(f'\tsubgraph cluster_{group} {{')
@@ -86,7 +86,7 @@ def generate_dot_source(config, direction):
             shape = node.get('shape', 'ellipse')
 
             fixedsize_attrs = ''
-            if node.get("type") == "vnode":  # 虚节点
+            if node.get("type") == "vnode":  # virtual node
                 fixedsize_attrs = ' fixedsize=true height=0.1 width=0.1'
                 label = ''
                 shape = 'circle'
@@ -97,7 +97,7 @@ def generate_dot_source(config, direction):
         if group:
             lines.append('\t}')
 
-    # 处理边定义
+    # Render edges
     for edge in edges_cfg:
         src = edge['from']
         tgt = edge['to']
@@ -125,9 +125,7 @@ class DiagramsRenderer(IGraphRenderer):
     def render(self, config: dict, backend_name):
         out_path = config['output']['path']
         file_root_no_ext = os.path.splitext(out_path)[0]
-
-        # svg 渲染有问题，强制渲染成png
-        # fmt = file_ext.lstrip('.') if file_ext else 'svg'
+        
         fmt = 'png'
         out_path = out_path.split(".")[0] + f".{fmt}"
         
@@ -159,16 +157,11 @@ class DiagramsRenderer(IGraphRenderer):
         }
         node_attr = {"style": "solid", "fontsize": "10", "labelloc": "c", 'fontname': fontname,}
 
-        direction = random.choice(['LR', 'RL', 'TB', 'BT'])  # 随机选择方向
+        direction = random.choice(['LR', 'RL', 'TB', 'BT'])  # randomly select direction
         graph_attrs['rankdir'] = direction
 
         try:
             original_cwd = os.getcwd()
-            # if output_dir:
-            #     os.chdir(output_dir)
-            #     diagram_filename = os.path.basename(file_root_no_ext)
-            # else:
-            #     diagram_filename = file_root_no_ext
 
             dot_path = os.path.join(output_dir, os.path.basename(file_root_no_ext))
             with Diagram(outformat=fmt, filename=dot_path, show=False,
@@ -184,7 +177,7 @@ class DiagramsRenderer(IGraphRenderer):
                 for subgraph in subgraphs_cfg:
                     cluster_instances[subgraph['id']] = Cluster(subgraph['label'])
 
-                # 创建所有节点
+                # Create all nodes
                 for node_data in nodes_cfg:
                     node_id = node_data['id']
                     label = node_data.get('label', node_id)
@@ -199,7 +192,7 @@ class DiagramsRenderer(IGraphRenderer):
                             "fillcolor": "#FFFFFF",
                             "style": "dashed",
                             "shape": "point",
-                            # "style": "invis",  # 完全不显示
+                            # "style": "invis",  # completely hidden
                             "color": "#888888",
                             "height": "0.1",
                             "width": "0.1",
@@ -238,22 +231,22 @@ class DiagramsRenderer(IGraphRenderer):
                         )
 
         
-                # 添加边
+                # Add edges
                 for edge in edges_cfg:
                     src_id = edge['from']
                     tgt_id = edge['to']
                     label = edge.get('label', '')
-                    edge_style = edge['style']  # 此处应是一个字典，如 {'style': 'dotted', 'penwidth': '1.5', 'dir': 'both'}
+                    edge_style = edge['style']  # should be a dict, e.g. {'style': 'dotted', 'penwidth': '1.5', 'dir': 'both'}
                     
                     edge_attrs_for_edge_obj = {
                         "fontsize": "10",
                         "fontname": fontname,
-                        "color": edge['color']['stroke'],  # 默认颜色
+                        "color": edge['color']['stroke'],  # default color
                         "style": edge_style.get('style', 'solid'),
                         "penwidth": edge_style.get('penwidth', '1.5'),
                     }
 
-                    # 特殊样式处理：highlight
+                    # Special style: highlight
                     if edge_style.get('style') == 'highlight':
                         edge_attrs_for_edge_obj['color'] = '#FF4081'
                         edge_attrs_for_edge_obj['penwidth'] = '2'
@@ -262,17 +255,17 @@ class DiagramsRenderer(IGraphRenderer):
                         edge_attrs_for_edge_obj['label'] = label
 
                     if src_id in node_refs and tgt_id in node_refs:
-                        # 处理箭头方向
+                        # Handle arrow direction
                         dir_type = edge_style.get('dir', 'forward')
 
                         if dir_type == 'both' or dir_type == 'none':
-                            # 双向连接，用两条边模拟
+                            # Bidirectional connection (simulate with two edges)
                             node_refs[src_id] >> Edge(**edge_attrs_for_edge_obj) >> node_refs[tgt_id]
                             node_refs[tgt_id] >> Edge(**edge_attrs_for_edge_obj) >> node_refs[src_id]
-                        else:  # forward 或默认
+                        else:  # forward or default
                             node_refs[src_id] >> Edge(**edge_attrs_for_edge_obj) >> node_refs[tgt_id]
                     else:
-                        print(f"[Warning] 无法连接边：{src_id} -> {tgt_id} (节点未找到)")
+                        print(f"[Warning] Cannot connect edge: {src_id} -> {tgt_id} (node not found)")
 
                                     
             dot_source = generate_dot_source(config, direction=direction)
@@ -282,13 +275,13 @@ class DiagramsRenderer(IGraphRenderer):
             
             print(f"[Diagrams] Graph saved to: {out_path}")
             
-            # 如果启用了扫描风格
+            # If scanned style is enabled
             if config['graph'].get('scanned', False):
-                # 新建输出路径：原路径加 `_scanned` 后缀
+                # Create new output path: add `_scanned` suffix
                 base, ext = os.path.splitext(out_path)
                 scanned_path = base + "_scanned" + ext
 
-                # 拷贝原图（因为我们不覆盖原图）
+                # Copy the original image (to avoid overwriting)
                 copyfile(out_path, scanned_path)
                 apply_scanned_style(scanned_path, config['graph']['scanned'], backend_name)
 
@@ -296,5 +289,3 @@ class DiagramsRenderer(IGraphRenderer):
             print(f"[Diagrams] Error rendering graph: {e}")
             if output_dir:
                 os.chdir(original_cwd)
-                
-

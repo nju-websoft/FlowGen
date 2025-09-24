@@ -1,154 +1,140 @@
 # my_dictionary.py
 
-LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")  # 你也可以添加小写、双字母组合等扩展形式
-LOGIC_EDGE_LABELS = [
-    "starts", "finishes", "triggers", "initiates", "activates",
-    "calls", "executes", "controls", "monitors", "handles",
-    "sends", "receives", "transfers", "routes", "passes",
-    "waits for", "responds to", "acknowledges", "follows", "precedes",
-    "leads to", "results in", "causes", "prepares", "builds",
-    "verifies", "checks", "validates", "confirms", "approves",
-    "rejects", "selects", "updates", "modifies", "creates",
-    "deletes", "reads", "writes", "loads", "stores",
-    "generates", "calculates", "evaluates", "compares", "matches",
-    "joins", "splits", "synchronizes", "blocks", "resumes"
-]
-YES_NO_EDGE_LABELS=["Yes", "No"]
-
-# ========== 主题分类 ==========
-# 共计120个不同的主题
+# ========== Topic Categories ==========
+# A total of 120 different topics
 APPLICATIONS = [
-    'Finance',               # 金融
-    'Healthcare',            # 医疗健康
-    'Manufacturing',         # 制造业
-    'Education',             # 教育
-    'E_commerce',            # 电子商务
-    'Transportation',        # 交通运输
-    'Energy',                # 能源
-    'Legal',                 # 法律
-    'Logistics',             # 物流
-    'Telecom',               # 通信
-    'Agriculture',           # 农业
-    'Tourism',               # 旅游
-    'Real Estate',           # 房地产
-    'Public Safety',         # 公共安全
-    'Entertainment',         # 娱乐
-    'Environment',           # 环境保护
-    'Government',            # 政府与公共事务
-    'Retail',                # 零售
-    'Automotive',            # 汽车行业
-    'Aerospace',             # 航空航天
+    'Finance',               
+    'Healthcare',            
+    'Manufacturing',         
+    'Education',             
+    'E_commerce',            
+    'Transportation',        
+    'Energy',                
+    'Legal',                 
+    'Logistics',             
+    'Telecom',               
+    'Agriculture',           
+    'Tourism',               
+    'Real Estate',           
+    'Public Safety',         
+    'Entertainment',         
+    'Environment',           
+    'Government',            
+    'Retail',                
+    'Automotive',            
+    'Aerospace',             
     
-    'Insurance',             # 保险
-    'Cybersecurity',         # 网络安全
-    'Smart Home',            # 智能家居
-    'Smart City',            # 智慧城市
-    'Biotechnology',         # 生物技术
-    'Pharmaceuticals',       # 制药
-    'Robotics',              # 机器人
-    'Construction',          # 建筑
-    'Media',                 # 媒体
-    'Food & Beverage',       # 餐饮
-    'Sports',                # 体育
-    'Fashion',               # 时尚
-    'Human Resources',       # 人力资源
-    'Recruitment',           # 招聘
-    'Customer Service',      # 客户服务
-    'Supply Chain',          # 供应链
-    'Mining',                # 矿业
-    'Maritime',              # 航运
-    'Space Exploration',     # 太空探索
-    'Climate Science',       # 气候科学
+    'Insurance',             
+    'Cybersecurity',         
+    'Smart Home',            
+    'Smart City',            
+    'Biotechnology',         
+    'Pharmaceuticals',       
+    'Robotics',              
+    'Construction',          
+    'Media',                 
+    'Food & Beverage',       
+    'Sports',                
+    'Fashion',               
+    'Human Resources',       
+    'Recruitment',           
+    'Customer Service',      
+    'Supply Chain',          
+    'Mining',                
+    'Maritime',              
+    'Space Exploration',     
+    'Climate Science',       
     
-    'Meteorology',           # 气象
-    'Waste Management',      # 废物管理
-    'Water Management',      # 水资源管理
-    'Recycling',             # 回收利用
-    'Forestry',              # 林业
-    'Veterinary',            # 兽医学
-    'Childcare',             # 儿童照护
-    'Elderly Care',          # 老年护理
-    'Disaster Management',   # 灾害管理
-    'Military',              # 军事
-    'Aviation',              # 航空
-    'Navigation',            # 导航
-    '3D Printing',           # 3D打印
-    'Nanotechnology',        # 纳米技术
-    'Quantum Computing',     # 量子计算
-    'AR or VR',                 # 增强 or 虚拟现实
-    'Gaming',                # 游戏
-    'Music',                 # 音乐
-    'Film Production',       # 电影制作
-    'Content Creation',      # 内容创作
+    'Meteorology',           
+    'Waste Management',      
+    'Water Management',      
+    'Recycling',             
+    'Forestry',              
+    'Veterinary',            
+    'Childcare',             
+    'Elderly Care',          
+    'Disaster Management',   
+    'Military',              
+    'Aviation',              
+    'Navigation',            
+    '3D Printing',          
+    'Nanotechnology',        
+    'Quantum Computing',     
+    'AR or VR',               
+    'Gaming',                
+    'Music',                 
+    'Film Production',       
+    'Content Creation',      
     
-    'Data Analytics',        # 数据分析
-    'Business Intelligence', # 商业智能
-    'Marketing',             # 市场营销
-    'Advertising',           # 广告
-    'Blockchain',            # 区块链
-    'Cryptocurrency',        # 加密货币
-    'Crowdfunding',          # 众筹
-    'IoT',                   # 物联网
-    'Edge Computing',        # 边缘计算
-    'Cloud Computing',       # 云计算
-    'IT Infrastructure',     # IT基础设施
-    'DevOps',                # 开发运维
-    'Software Development',  # 软件开发
-    'Hardware Design',       # 硬件设计
-    'Mobile Apps',           # 移动应用
-    'Social Media',          # 社交媒体
-    'Search Engines',        # 搜索引擎
-    'Digital Identity',      # 数字身份
-    'Online Education',      # 在线教育
-    'MOOCs',                 # 大规模在线课程
+    'Data Analytics',        
+    'Business Intelligence', 
+    'Marketing',             
+    'Advertising',           
+    'Blockchain',            
+    'Cryptocurrency',        
+    'Crowdfunding',          
+    'IoT',                   
+    'Edge Computing',        
+    'Cloud Computing',       
+    'IT Infrastructure',    
+    'DevOps',                
+    'Software Development',  
+    'Hardware Design',       
+    'Mobile Apps',           
+    'Social Media',          
+    'Search Engines',        
+    'Digital Identity',      
+    'Online Education',      
+    'MOOCs',                 
     
-    'Test Preparation',      # 考试辅导
-    'Language Learning',     # 语言学习
-    'Mental Health',         # 心理健康
-    'Nutrition',             # 营养学
-    'Fitness',               # 健身
-    'Wellness',              # 健康管理
-    'Interior Design',       # 室内设计
-    'Real_Time Translation', # 实时翻译
-    'Drone Technology',      # 无人机技术
-    'Autonomous Vehicles',   # 自动驾驶
-    'Shared Mobility',       # 共享出行
-    'Parking Systems',       # 停车系统
-    'Ticketing Systems',     # 票务系统
-    'Electronic Voting',     # 电子投票
-    'Policy Analysis',       # 政策分析
-    'Academic Research',     # 学术研究
-    'Library Systems',       # 图书馆系统
-    'Archival Management',   # 档案管理
-    'Museum Technology',     # 博物馆科技
-    'Ethics & Compliance',   # 伦理与合规
+    'Test Preparation',      
+    'Language Learning',     
+    'Mental Health',         
+    'Nutrition',             
+    'Fitness',               
+    'Wellness',              
+    'Interior Design',       
+    'Real_Time Translation', 
+    'Drone Technology',      
+    'Autonomous Vehicles',   
+    'Shared Mobility',       
+    'Parking Systems',       
+    'Ticketing Systems',     
+    'Electronic Voting',     
+    'Policy Analysis',       
+    'Academic Research',     
+    'Library Systems',       
+    'Archival Management',   
+    'Museum Technology',     
+    'Ethics & Compliance',   
     
-    'Forensics',             # 法医科学
-    'Counterterrorism',      # 反恐
-    'Surveillance',          # 监控
-    'Crime Prevention',      # 犯罪预防
-    'Wildlife Conservation', # 野生动物保护
-    'Oceanography',          # 海洋学
-    'Seismology',            # 地震学
-    'Genomics',              # 基因组学
-    'Speech Recognition',    # 语音识别
-    'Text Mining',           # 文本挖掘
-    'Digital Twins',         # 数字孪生
-    'Process Automation',    # 流程自动化
-    'Quality Control',       # 质量控制
-    'ERP Systems',           # 企业资源计划系统
-    'Digital Agriculture',   # 数字农业
-    'Esports',               # 电竞
-    'Neuroscience',          # 神经科学
-    'Cultural Heritage',     # 文化遗产保护
-    'Synthetic Biology',     # 合成生物学
-    'Education Technology',   # 教育科技
+    'Forensics',             
+    'Counterterrorism',      
+    'Surveillance',          
+    'Crime Prevention',      
+    'Wildlife Conservation', 
+    'Oceanography',          
+    'Seismology',            
+    'Genomics',              
+    'Speech Recognition',    
+    'Text Mining',           
+    'Digital Twins',         
+    'Process Automation',    
+    'Quality Control',       
+    'ERP Systems',           
+    'Digital Agriculture',   
+    'Esports',               
+    'Neuroscience',         
+    'Cultural Heritage',     
+    'Synthetic Biology',     
+    'Education Technology',   
 ]
 
 
 
-# ========== 每个主题的节点名称 ==========
-# 每个主题有40个不同的节点名称
+# ========== Node Names for Each Topic ==========
+# Each topic has 40 unique node names
+
 NODE_NAMES = {
     'Finance': [
         'Account Verification', 'Credit Scoring', 'Approval Decision', 'Fraud Check', 'Transaction Audit',
@@ -1351,8 +1337,9 @@ NODE_NAMES = {
     ],
 }
 
-# ========== 每个主题的边标签 ==========
-# 每个主题的边标签有40个
+# ========== Edge Labels for Each Topic ==========
+# Each topic has 40 edge labels
+
 EDGE_LABELS = {
     'Finance': [
         'verifies', 'approves', 'rejects', 'checks', 'audits', 'scores', 'flags', 'processes', 'disburses', 'assesses',
@@ -2077,112 +2064,112 @@ EDGE_LABELS = {
 }
 
 
+# ========== Node Colors ==========
+# A total of 90 colors
 
-# ========== 节点的颜色 ==========
-# 共计90种
 PALETTE = [
-    {"fill": "#E3F2FD", "stroke": "#64B5F6"},   # 浅蓝系
-    {"fill": "#F1F8E9", "stroke": "#81C784"},   # 浅绿系
-    {"fill": "#FFF3E0", "stroke": "#FFB74D"},   # 浅橙系
-    {"fill": "#F3E5F5", "stroke": "#BA68C8"},   # 淡紫系
-    {"fill": "#E8F5E9", "stroke": "#66BB6A"},   # 绿色系
-    {"fill": "#FBE9E7", "stroke": "#FF8A65"},   # 淡红系
-    {"fill": "#ECEFF1", "stroke": "#90A4AE"},   # 灰蓝系
-    {"fill": "#FFFDE7", "stroke": "#FFF176"},   # 浅黄系
-    {"fill": "#E0F2F1", "stroke": "#4DB6AC"},   # 青绿色系
-    {"fill": "#F9FBE7", "stroke": "#DCE775"},   # 黄绿系
-    {"fill": "#EDE7F6", "stroke": "#9575CD"},   # 淡紫蓝系
-    {"fill": "#FFEBEE", "stroke": "#E57373"},   # 粉红系
-    {"fill": "#FFF8E1", "stroke": "#FFD54F"},   # 金黄系
-    {"fill": "#E1F5FE", "stroke": "#4FC3F7"},   # 天蓝系
-    {"fill": "#F0F4C3", "stroke": "#AED581"},   # 浅黄绿系
-    {"fill": "#E8EAF6", "stroke": "#7986CB"},   # 靛蓝系
-    {"fill": "#FCE4EC", "stroke": "#F06292"},   # 粉紫系
-    {"fill": "#F1F8FF", "stroke": "#42A5F5"},   # 冰蓝系
-    {"fill": "#F9FBE7", "stroke": "#C0CA33"},   # 橄榄绿系
-    {"fill": "#FFF9C4", "stroke": "#FFEB3B"},   # 鲜黄系
-    {"fill": "#E0F7FA", "stroke": "#00BCD4"},   # 湖蓝系
-    {"fill": "#F3E5F5", "stroke": "#AB47BC"},   # 紫红系
-    {"fill": "#E8EAF6", "stroke": "#5C6BC0"},   # 深蓝紫系
-    {"fill": "#E0F2F1", "stroke": "#26A69A"},   # 深青绿色系
-    {"fill": "#FFF3E0", "stroke": "#FFA726"},   # 深橙系
-    {"fill": "#EFEBE9", "stroke": "#A1887F"},   # 棕灰系
-    {"fill": "#F5F5F5", "stroke": "#BDBDBD"},   # 灰白系
-    {"fill": "#EDE7F6", "stroke": "#7E57C2"},   # 深紫系
-    {"fill": "#FFFDE7", "stroke": "#FBC02D"},   # 暖黄系
-    {"fill": "#F1F8E9", "stroke": "#388E3C"},   # 深绿系
+    {"fill": "#E3F2FD", "stroke": "#64B5F6"},   
+    {"fill": "#F1F8E9", "stroke": "#81C784"},   
+    {"fill": "#FFF3E0", "stroke": "#FFB74D"},   
+    {"fill": "#F3E5F5", "stroke": "#BA68C8"},   
+    {"fill": "#E8F5E9", "stroke": "#66BB6A"},   
+    {"fill": "#FBE9E7", "stroke": "#FF8A65"},   
+    {"fill": "#ECEFF1", "stroke": "#90A4AE"},   
+    {"fill": "#FFFDE7", "stroke": "#FFF176"},   
+    {"fill": "#E0F2F1", "stroke": "#4DB6AC"},   
+    {"fill": "#F9FBE7", "stroke": "#DCE775"},   
+    {"fill": "#EDE7F6", "stroke": "#9575CD"},   
+    {"fill": "#FFEBEE", "stroke": "#E57373"},   
+    {"fill": "#FFF8E1", "stroke": "#FFD54F"},   
+    {"fill": "#E1F5FE", "stroke": "#4FC3F7"},   
+    {"fill": "#F0F4C3", "stroke": "#AED581"},   
+    {"fill": "#E8EAF6", "stroke": "#7986CB"},   
+    {"fill": "#FCE4EC", "stroke": "#F06292"},   
+    {"fill": "#F1F8FF", "stroke": "#42A5F5"},   
+    {"fill": "#F9FBE7", "stroke": "#C0CA33"},   
+    {"fill": "#FFF9C4", "stroke": "#FFEB3B"},   
+    {"fill": "#E0F7FA", "stroke": "#00BCD4"},   
+    {"fill": "#F3E5F5", "stroke": "#AB47BC"},   
+    {"fill": "#E8EAF6", "stroke": "#5C6BC0"},   
+    {"fill": "#E0F2F1", "stroke": "#26A69A"},   
+    {"fill": "#FFF3E0", "stroke": "#FFA726"},   
+    {"fill": "#EFEBE9", "stroke": "#A1887F"},   
+    {"fill": "#F5F5F5", "stroke": "#BDBDBD"},   
+    {"fill": "#EDE7F6", "stroke": "#7E57C2"},   
+    {"fill": "#FFFDE7", "stroke": "#FBC02D"},   
+    {"fill": "#F1F8E9", "stroke": "#388E3C"},   
 
-    # 蓝色系变体
-    {"fill": "#D0E0F8", "stroke": "#4285F4"}, # 蓝色变体1
-    {"fill": "#C8E6C9", "stroke": "#388E3C"}, # 绿色变体1
-    {"fill": "#FFECB3", "stroke": "#FFC107"}, # 橙色变体1
-    {"fill": "#E1BEE7", "stroke": "#9C27B0"}, # 紫色变体1
-    {"fill": "#BBDEFB", "stroke": "#2196F3"}, # 蓝色变体2
-    {"fill": "#D1C4E9", "stroke": "#673AB7"}, # 紫色变体2
-    {"fill": "#FFCDD2", "stroke": "#F44336"}, # 红色系变体
-    {"fill": "#F5F5DC", "stroke": "#BCB88A"}, # 卡其色系
-    {"fill": "#C5CAE9", "stroke": "#3F51B5"}, # 靛蓝系变体
-    {"fill": "#B2EBF2", "stroke": "#00BCD4"}, # 浅青色系
+    
+    {"fill": "#D0E0F8", "stroke": "#4285F4"}, 
+    {"fill": "#C8E6C9", "stroke": "#388E3C"}, 
+    {"fill": "#FFECB3", "stroke": "#FFC107"}, 
+    {"fill": "#E1BEE7", "stroke": "#9C27B0"}, 
+    {"fill": "#BBDEFB", "stroke": "#2196F3"}, 
+    {"fill": "#D1C4E9", "stroke": "#673AB7"}, 
+    {"fill": "#FFCDD2", "stroke": "#F44336"}, 
+    {"fill": "#F5F5DC", "stroke": "#BCB88A"}, 
+    {"fill": "#C5CAE9", "stroke": "#3F51B5"}, 
+    {"fill": "#B2EBF2", "stroke": "#00BCD4"}, 
 
-    # 扩展新色系
-    {"fill": "#FFE0B2", "stroke": "#FF9800"}, # 橘色系
-    {"fill": "#D7CCC8", "stroke": "#795548"}, # 棕色系
-    {"fill": "#F8BBD0", "stroke": "#E91E63"}, # 深粉色系
-    {"fill": "#CFD8DC", "stroke": "#607D8B"}, # 蓝灰色系
-    {"fill": "#C8E6C9", "stroke": "#4CAF50"}, # 亮绿色系
-    {"fill": "#FFCCBC", "stroke": "#FF5722"}, # 深橘红系
-    {"fill": "#D1C4E9", "stroke": "#7E57C2"}, # 较淡的深紫系
-    {"fill": "#B3E5FC", "stroke": "#03A9F4"}, # 亮蓝色系
-    {"fill": "#FCE4EC", "stroke": "#E91E63"}, # 浅粉色系
-    {"fill": "#E6EE9C", "stroke": "#CDDC39"}, # 柠檬绿系
+    
+    {"fill": "#FFE0B2", "stroke": "#FF9800"}, 
+    {"fill": "#D7CCC8", "stroke": "#795548"}, 
+    {"fill": "#F8BBD0", "stroke": "#E91E63"}, 
+    {"fill": "#CFD8DC", "stroke": "#607D8B"}, 
+    {"fill": "#C8E6C9", "stroke": "#4CAF50"}, 
+    {"fill": "#FFCCBC", "stroke": "#FF5722"}, 
+    {"fill": "#D1C4E9", "stroke": "#7E57C2"}, 
+    {"fill": "#B3E5FC", "stroke": "#03A9F4"}, 
+    {"fill": "#FCE4EC", "stroke": "#E91E63"}, 
+    {"fill": "#E6EE9C", "stroke": "#CDDC39"}, 
 
-    {"fill": "#C9F0F0", "stroke": "#4DD0E1"}, # 偏淡的青色
-    {"fill": "#DDCEDD", "stroke": "#AF56A6"}, # 偏淡的紫红
-    {"fill": "#D3D7EB", "stroke": "#8C9EFF"}, # 偏淡的蓝紫
-    {"fill": "#C2E8E6", "stroke": "#61CAC3"}, # 偏淡的青绿色
-    {"fill": "#FFDAB9", "stroke": "#FFC085"}, # 桃色系
-    {"fill": "#DFE7EB", "stroke": "#B0C5CD"}, # 浅灰蓝色
-    {"fill": "#EBEBEB", "stroke": "#E0E0E0"}, # 极浅灰色
-    {"fill": "#DACBE3", "stroke": "#A188D0"}, # 中等紫系
-    {"fill": "#FFE88D", "stroke": "#FFDA4E"}, # 金黄色系
-    {"fill": "#CADEDE", "stroke": "#94C0C0"}, # 浅灰绿蓝系
+    {"fill": "#C9F0F0", "stroke": "#4DD0E1"}, 
+    {"fill": "#DDCEDD", "stroke": "#AF56A6"}, 
+    {"fill": "#D3D7EB", "stroke": "#8C9EFF"}, 
+    {"fill": "#C2E8E6", "stroke": "#61CAC3"}, 
+    {"fill": "#FFDAB9", "stroke": "#FFC085"}, 
+    {"fill": "#DFE7EB", "stroke": "#B0C5CD"}, 
+    {"fill": "#EBEBEB", "stroke": "#E0E0E0"}, 
+    {"fill": "#DACBE3", "stroke": "#A188D0"}, 
+    {"fill": "#FFE88D", "stroke": "#FFDA4E"}, 
+    {"fill": "#CADEDE", "stroke": "#94C0C0"}, 
 
-    {"fill": "#F6F6F6", "stroke": "#CFCFCF"}, # 浅浅灰系
-    {"fill": "#EDF5F3", "stroke": "#A1D7CD"}, # 浅薄荷绿
-    {"fill": "#FFF0CC", "stroke": "#FFCC80"}, # 奶油橙色
-    {"fill": "#F2E6F5", "stroke": "#CB9BE1"}, # 较浅的淡紫
-    {"fill": "#E8F0EA", "stroke": "#92C79A"}, # 较浅的绿色
-    {"fill": "#FFDCD6", "stroke": "#FFB2A5"}, # 浅三文鱼粉
-    {"fill": "#E0E6E9", "stroke": "#AABEC6"}, # 淡蓝灰
-    {"fill": "#FFFCE6", "stroke": "#FFF9AE"}, # 极浅黄
-    {"fill": "#D0EFEE", "stroke": "#73C6BC"}, # 中等青绿
-    {"fill": "#FDFCEB", "stroke": "#EAEFA5"}, # 极浅黄绿
+    {"fill": "#F6F6F6", "stroke": "#CFCFCF"}, 
+    {"fill": "#EDF5F3", "stroke": "#A1D7CD"}, 
+    {"fill": "#FFF0CC", "stroke": "#FFCC80"}, 
+    {"fill": "#F2E6F5", "stroke": "#CB9BE1"}, 
+    {"fill": "#E8F0EA", "stroke": "#92C79A"}, 
+    {"fill": "#FFDCD6", "stroke": "#FFB2A5"}, 
+    {"fill": "#E0E6E9", "stroke": "#AABEC6"}, 
+    {"fill": "#FFFCE6", "stroke": "#FFF9AE"}, 
+    {"fill": "#D0EFEE", "stroke": "#73C6BC"}, 
+    {"fill": "#FDFCEB", "stroke": "#EAEFA5"}, 
 
-    {"fill": "#EFE6FF", "stroke": "#C2B2F0"}, # 极浅紫蓝
-    {"fill": "#FFEBEB", "stroke": "#FFC2C2"}, # 极浅粉红
-    {"fill": "#FFF9D4", "stroke": "#FFE69C"}, # 极浅金黄
-    {"fill": "#C8EDFF", "stroke": "#82DAFF"}, # 极浅天蓝
-    {"fill": "#F8FDD3", "stroke": "#D3EB9F"}, # 极浅黄绿
-    {"fill": "#ECF0FD", "stroke": "#B8C0F5"}, # 极浅靛蓝
-    {"fill": "#FAEBF3", "stroke": "#F7BEE0"}, # 极浅粉紫
-    {"fill": "#E8F0FF", "stroke": "#A2D0FF"}, # 极浅冰蓝
-    {"fill": "#FCFCE7", "stroke": "#DCE775"}, # 极浅橄榄绿
-    {"fill": "#FFFDE0", "stroke": "#FFF8A6"}, # 极浅鲜黄
+    {"fill": "#EFE6FF", "stroke": "#C2B2F0"}, 
+    {"fill": "#FFEBEB", "stroke": "#FFC2C2"}, 
+    {"fill": "#FFF9D4", "stroke": "#FFE69C"}, 
+    {"fill": "#C8EDFF", "stroke": "#82DAFF"}, 
+    {"fill": "#F8FDD3", "stroke": "#D3EB9F"}, 
+    {"fill": "#ECF0FD", "stroke": "#B8C0F5"}, 
+    {"fill": "#FAEBF3", "stroke": "#F7BEE0"}, 
+    {"fill": "#E8F0FF", "stroke": "#A2D0FF"}, 
+    {"fill": "#FCFCE7", "stroke": "#DCE775"}, 
+    {"fill": "#FFFDE0", "stroke": "#FFF8A6"}, 
 
-    {"fill": "#D3F7F9", "stroke": "#80DDEA"}, # 较浅的湖蓝
-    {"fill": "#ECCFF5", "stroke": "#CD8FF2"}, # 较浅的紫红
-    {"fill": "#D6D9F0", "stroke": "#9FA9E1"}, # 较浅的深蓝紫
-    {"fill": "#C9EFEC", "stroke": "#6FE1D5"}, # 较浅的深青绿色
-    {"fill": "#FFF6D9", "stroke": "#FFCC7A"}, # 较浅的深橙
-    {"fill": "#E4E0DF", "stroke": "#BDAFA8"}, # 较浅的棕灰
-    {"fill": "#F0F0F0", "stroke": "#D2D2D2"}, # 亮灰白
-    {"fill": "#DED7F0", "stroke": "#A188DB"}, # 较浅的深紫
-    {"fill": "#FFFAE0", "stroke": "#FFE470"}, # 较浅的暖黄
-    {"fill": "#E9F7E8", "stroke": "#6EB76D"}  # 较浅的深绿
+    {"fill": "#D3F7F9", "stroke": "#80DDEA"}, 
+    {"fill": "#ECCFF5", "stroke": "#CD8FF2"}, 
+    {"fill": "#D6D9F0", "stroke": "#9FA9E1"}, 
+    {"fill": "#C9EFEC", "stroke": "#6FE1D5"}, 
+    {"fill": "#FFF6D9", "stroke": "#FFCC7A"}, 
+    {"fill": "#E4E0DF", "stroke": "#BDAFA8"}, 
+    {"fill": "#F0F0F0", "stroke": "#D2D2D2"}, 
+    {"fill": "#DED7F0", "stroke": "#A188DB"}, 
+    {"fill": "#FFFAE0", "stroke": "#FFE470"}, 
+    {"fill": "#E9F7E8", "stroke": "#6EB76D"}  
 ]
 
 
-# ========== 各渲染器节点形状定义 ==========
+# ========== Node Shape Definitions for Each Renderer ==========
 
 NODE_SHAPES = {
     'mermaid': {
@@ -2210,7 +2197,7 @@ NODE_SHAPES = {
     }
 }
 
-# ========== 各渲染器边样式定义 ==========
+# ========== Edge Style Definitions for Each Renderer ==========
 
 EDGE_STYLES = {
     'mermaid': {
@@ -2240,13 +2227,11 @@ EDGE_STYLES = {
     },
 
     'plantuml': {
-        # === 基础样式 ===
         'solid_arrow':       {'style': 'solid', 'arrow': '-->',  'stroke_width': '1px'},
         'dotted_arrow':      {'style': 'dotted','arrow': '-->',  'stroke_width': '1px'},
         'dashed_arrow':      {'style': 'dashed','arrow': '-->',  'stroke_width': '1px'},
         # 'bold_arrow':        {'style': 'solid', 'arrow': '__>',  'stroke_width': '3px'},
 
-        # === 模拟方向控制 ===
         # 'bidirectional':   {'style': 'solid', 'arrow': '<-->', 'stroke_width': '1px'},
         # 'no_arrow':        {'style': 'solid', 'arrow': '--',   'stroke_width': '1px'},
         # 'dashed_both':     {'style': 'dashed','arrow': '<-->', 'stroke_width': '1px'},
@@ -2263,7 +2248,8 @@ EDGE_STYLES = {
     }
 }
 
-# 嵌套子图的颜色
+# Colors for Nested Subgraphs
+
 _PRESET_COLORS = [
     "#E8F5E9", # Green 50
     "#E3F2FD", # Blue 50

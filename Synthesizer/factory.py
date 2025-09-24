@@ -10,7 +10,7 @@ RENDERER_REGISTRY = {
 }
 
 def get_renderer(name: str) -> IGraphRenderer:
-    renderer_cls = RENDERER_REGISTRY.get(name.lower()) # 使用小写以增加灵活性
+    renderer_cls = RENDERER_REGISTRY.get(name.lower())
     if not renderer_cls:
         raise ValueError(f"Unsupported backend: {name}. Supported backends are: {list(RENDERER_REGISTRY.keys())}")
     return renderer_cls()

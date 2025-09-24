@@ -1,20 +1,20 @@
 # mermaid_renderer.py
 import os
-from interfaces import IGraphRenderer  # 相对导入
+from interfaces import IGraphRenderer  # relative import
 import random
 from shutil import copyfile
 from graph_generator import apply_scanned_style
 
 class MermaidRenderer(IGraphRenderer):
     def render(self, config: dict, backend_name):
-        # 添加仿手写样式定义（仅对 class="handwritten" 的元素生效）
+        # Add handwritten style definition (only works for elements with class="handwritten")
         handwritten_class_def = '    classDef handwritten font-family:Comic Sans MS,font-size:14px,color:#2b2b2b;'
         
         nodes_cfg = config['graph']['nodes']
         edges_cfg = config['graph']['edges']
         subgraphs_cfg = config['graph'].get('subgraphs', []) 
         # direction = config['graph'].get('direction', 'TD')
-        direction = random.choice(['LR', 'RL', 'TD', 'BT'])  # 随机选择方向
+        direction = random.choice(['LR', 'RL', 'TD', 'BT'])  # randomly choose direction
 
         lines = [f"graph {direction}"]
 
@@ -25,7 +25,7 @@ class MermaidRenderer(IGraphRenderer):
         if description:
             print(f"[Mermaid] Description: {description}")
 
-        # Mermaid 形状映射
+        # Mermaid shape mapping
         shape_map = {
             'box': ('[', ']'),
             'round': ('(', ')'),
@@ -40,21 +40,21 @@ class MermaidRenderer(IGraphRenderer):
         }
 
         style_defs = []
-        link_style_defs = [] # 用于存储边的样式定义
+        link_style_defs = []  # used to store edge style definitions
         processed_nodes = set() 
 
-        # 缓存所有节点，方便按ID查找
+        # cache all nodes for quick lookup by ID
         node_lookup = {node['id']: node for node in nodes_cfg}
         
-        # 获取最小和最大 node id（假设 id 格式为 N<number>）
+        # get smallest and largest node id (assuming id format is N<number>)
         node_ids_sorted = sorted(nodes_cfg, key=lambda n: int(''.join(filter(str.isdigit, n['id']))))
         start_node_id = node_ids_sorted[0]['id']
         end_node_id = node_ids_sorted[-1]['id']
 
-        rename_prob = 0.4  # 40% 概率改名
-        remove_all_colors = random.random() < 0.3  # 30% 概率全局去掉颜色
+        rename_prob = 0.4  # 40% chance to rename
+        remove_all_colors = random.random() < 0.3  # 30% chance to remove all colors
         
-        # Step 1: 处理主流程节点和虚节点
+        # Step 1: process main nodes and virtual nodes
         for node in nodes_cfg:
             nid = node['id']
 
@@ -62,7 +62,7 @@ class MermaidRenderer(IGraphRenderer):
             if is_nested_node:
                 continue
 
-            # 虚节点（小圆圈无文字）
+            # virtual node (small circle without text)
             if node.get('type') == 'vnode':
                 lines.append(f"    {nid}(( ))")
                 processed_nodes.add(nid)
@@ -70,7 +70,7 @@ class MermaidRenderer(IGraphRenderer):
                 if node_color:
                     fill = node_color.get('fill')
                     stroke = node_color.get('stroke')
-                    # 虚节点可能只有边框颜色，确保 fill 和 stroke 都有值
+                    # ensure both fill and stroke are handled
                     fill_str = f"fill:{fill}" if fill else ""
                     stroke_str = f"stroke:{stroke}" if stroke else ""
                     style_props = ','.join(filter(None, [fill_str, stroke_str]))
@@ -80,7 +80,7 @@ class MermaidRenderer(IGraphRenderer):
             
             if nid == start_node_id:
                 node['shape'] = 'stadium'
-                # 如果 remove_all_colors，强制是 start
+                # if remove_all_colors, force label to "start"
                 if remove_all_colors:
                     node['label'] = 'start'
                 elif random.random() < rename_prob:
@@ -92,7 +92,7 @@ class MermaidRenderer(IGraphRenderer):
                 elif random.random() < rename_prob:
                     node['label'] = 'end'
             
-            # 普通主节点
+            # normal node
             label = node.get('label', nid)
             shape = node.get('shape', 'box') 
             shape_open, shape_close = shape_map.get(shape, ('[', ']'))
@@ -116,17 +116,17 @@ class MermaidRenderer(IGraphRenderer):
                 if style_props:
                     style_defs.append(f"    style {nid} {style_props}")
 
-        # Step 2: 处理嵌套子图
+        # Step 2: process nested subgraphs
         for subgraph_data in subgraphs_cfg:
             subgraph_id = subgraph_data['id']
-            subgraph_label = subgraph_data.get('label', f"子图_{subgraph_id}")
+            subgraph_label = subgraph_data.get('label', f"Subgraph_{subgraph_id}")
             subgraph_nodes = subgraph_data['nodes']
             
             lines.append(f"    subgraph {subgraph_label}")
             for nid in subgraph_nodes:
                 node = node_lookup.get(nid)
                 if not node:
-                    print(f"[Mermaid] 警告: 子图 '{subgraph_id}' 中存在未找到的节点ID: {nid}")
+                    print(f"[Mermaid] Warning: Node ID '{nid}' not found in subgraph '{subgraph_id}'.")
                     continue
                 
                 label = node.get('label', nid)
@@ -153,16 +153,16 @@ class MermaidRenderer(IGraphRenderer):
                         style_defs.append(f"    style {nid} {style_props}")
             lines.append("    end")
 
-        # Step 3: 添加边连接和边样式
-        for i, edge in enumerate(edges_cfg): # 遍历边时获取索引
+        # Step 3: add edges and edge styles
+        for i, edge in enumerate(edges_cfg):  # get index when iterating edges
             source = edge['from']
             target = edge['to']
             
             if source not in processed_nodes and source not in node_lookup:
-                 print(f"[Mermaid] 警告: 边源节点 '{source}' 未被渲染或不存在于节点列表中。")
+                 print(f"[Mermaid] Warning: Edge source '{source}' not rendered or missing in node list.")
                  continue
             if target not in processed_nodes and target not in node_lookup:
-                 print(f"[Mermaid] 警告: 边目标节点 '{target}' 未被渲染或不存在于节点列表中。")
+                 print(f"[Mermaid] Warning: Edge target '{target}' not rendered or missing in node list.")
                  continue
                  
             label = edge.get('label', '')
@@ -170,9 +170,9 @@ class MermaidRenderer(IGraphRenderer):
             if remove_all_colors and label != '':
                 label = random.choice(["yes", "no"])                
                 
-            edge_color = edge.get('color', "")['stroke'] # 获取边的颜色
+            edge_color = edge.get('color', "")['stroke']  # get edge color
 
-            # 根据边的样式选择 Mermaid 的连接符
+            # choose Mermaid arrow symbols based on edge style
             arrow_symbol = edge.get('style', {})['style']
 
             if label:
@@ -190,16 +190,14 @@ class MermaidRenderer(IGraphRenderer):
                 style_props.append("font-family:'Comic Sans MS'")
                 style_props.append("font-size:12px")
 
-            # ✅ 拼接时要注意加分号；结尾也要加上分号
+            # ✅ make sure to append semicolon
             link_style_defs.append(f"    linkStyle {i} {','.join(style_props)};")
 
-
-
         style_defs.append(handwritten_class_def)
-        # 添加节点样式定义
+        # add node style definitions
         lines.extend(style_defs)
 
-        # 添加边样式定义
+        # add edge style definitions
         lines.extend(link_style_defs)
 
         mermaid_code = '\n'.join(lines)
@@ -219,12 +217,12 @@ class MermaidRenderer(IGraphRenderer):
             # os.system(f'mmdc -i "{mmd_path}" -o "{out_path}"')
             print(f"[Mermaid] Rendered image to {out_path}")
             
-            # 如果启用了扫描风格
+            # apply scanned style if enabled
             if config['graph'].get('scanned', False):
-                # 新建输出路径：原路径加 `_scanned` 后缀
+                # create new output path: add `_scanned` suffix
                 base, ext = os.path.splitext(out_path)
                 scanned_path = base + "_scanned" + ext
 
-                # 拷贝原图（因为我们不覆盖原图）
+                # copy original image (do not overwrite original)
                 copyfile(out_path, scanned_path)
                 apply_scanned_style(scanned_path, config['graph']['scanned'], backend_name)

@@ -1,42 +1,39 @@
-# config.yaml
-backend: "mermaid"  # mermaid, graphviz, plantuml, diagrams
+backend: "mermaid"  # Options: mermaid, graphviz, plantuml, diagrams
 
 generation:
   count: 5
-  order: "medium"  # 节点数量：small(8-12), medium(12-16), large(16-20)
-  split_arrow: 1   # 分叉箭头数量
-  merge_arrow: 1   # 汇聚箭头数量
-  branch: 3        # 箭头分叉数量
-  nest: 1          # 嵌套子图数量
-  density: 1.7    # 边数/点数
-  no_edge_label: 0         # 比例：多少比例的边不显示 label（增加 QA 难度）
+  order: "medium"        # Number of nodes: small(8-12), medium(12-16), large(16-20)
+  split_arrow: 1         # Number of split arrows
+  merge_arrow: 1         # Number of merge arrows
+  branch: 3              # Branch factor (number of outgoing edges per node)
+  nest: 1                # Number of nested subgraphs
+  density: 1.7           # Edge-to-node ratio
+  no_edge_label: 0       # Proportion of edges without labels (increases QA difficulty)
+
 Disturbance:
-  handwritten_style: false    # true/false：使用仿手写字体样式（增加图像解析难度）
+  handwritten_style: false    # true/false: use handwritten-style font (increases parsing difficulty)
 
 Scanned_style:
-  enable: false                  # 是否启用扫描风格
-  blur_radius: 1.0               # 模糊半径，单位像素（典型范围 0.8 ~ 2.0）
-  vignette: 0.3                  # 晕影强度，0 ~ 1，模拟边角阴影
-  rotation: 1.5                  # 最大随机旋转角度（度），一般 0 ~ 3 度
-  perspective_distortion: true   # 是否开启轻微的仿射/透视扭曲
-  # color_tint: "gray"           # 灰度图(gray) 或 背景偏黄(yellowish)
-  color_tint: "yellowish"
-  noise_level: 0.01              # 加入扫描噪点的强度，典型范围 0 ~ 0.1
-  compression_level: 5           # 模拟扫描后压缩，JPEG压缩质量（0-100，低值更模糊）
-
+  enable: false                  # Enable scanned-style effects
+  blur_radius: 1.0               # Blur radius in pixels (typical 0.8 ~ 2.0)
+  vignette: 0.3                  # Vignette intensity 0~1, simulates corner shading
+  rotation: 1.5                  # Maximum random rotation in degrees (typical 0~3)
+  perspective_distortion: true   # Enable slight affine/perspective distortion
+  color_tint: "yellowish"        # "gray" for grayscale, "yellowish" for warm tint
+  noise_level: 0.01              # Amount of scan noise (typical 0~0.1)
+  compression_level: 5           # Simulate compression (JPEG quality 0-100, lower=more blur)
 
 graph:
-  # title 和 description 可以使用占位符，它们将在 main.py 中被替换
-  title: "自动流程图 ({scale}) - #{count}"
-  description: "该流程图包含 {num_nodes} 个节点，分支箭头节点：{split_arrow}，汇聚箭头节点：{merge_arrow} 分支：{branch}，嵌套：{nest}，密度：{density}，无标签边比例: {no_edge_label_ratio}。"
+  # title and description can use placeholders replaced in main.py
+  title: "Auto Flowchart ({scale}) - #{count}"
+  description: "This flowchart has {num_nodes} nodes, split arrows: {split_arrow}, merge arrows: {merge_arrow}, branch: {branch}, nested: {nest}, density: {density}, no-label edge ratio: {no_edge_label_ratio}."
 
 output:
-  path: "/Your/path/{backend}/hard/{backend}.png" # 输出路径和文件名模板
-  render: true      # true: 尝试渲染为图片; false: 仅生成描述文件 (.mmd, .puml, .dot)
-                    # 对于 diagrams, render=true/false 行为一致，总是生成图片。
-                    # 优先级高于Scanned_style
+  path: "./output/{backend}/hard/{backend}.png"  # Relative path template for output
+  render: true      # true: render as image; false: only generate description file (.mmd, .puml, .dot)
+                    # For diagrams, render=true/false behaves the same (always generates image).
+                    # Has higher priority than Scanned_style
 
-'plantuml': {
-  # 将此路径替换为你的 plantuml.jar 的实际路径
-  'jar_path': '/Your/path/plantuml-1.2025.3.jar'  # macOS/Linux 示例
-}
+plantuml:
+  # Replace with your actual path to plantuml.jar
+  jar_path: "./tools/plantuml-1.2025.3.jar"  # Example path for macOS/Linux

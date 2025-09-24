@@ -9,15 +9,15 @@ from graph_generator import apply_scanned_style
 class GraphvizRenderer(IGraphRenderer):
     def render(self, config: dict, backend_name):
         if not isinstance(config, dict):
-            raise TypeError(f"config 应该是 dict 类型，但实际是: {type(config)}")
+            raise TypeError(f"config should be of type dict, but got: {type(config)}")
         if not isinstance(config.get('graph'), dict):
-            raise TypeError(f"config['graph'] 应该是 dict 类型，但实际是: {type(config.get('graph'))}")
+            raise TypeError(f"config['graph'] should be of type dict, but got: {type(config.get('graph'))}")
         out_path = config['output']['path']
         file_root, file_ext = os.path.splitext(out_path)
         fmt = file_ext.lstrip('.') if file_ext else 'png'
 
         dot = Digraph(format=fmt)
-        direction = random.choice(['LR', 'RL', 'TD', 'BT'])  # 随机选择方向
+        direction = random.choice(['LR', 'RL', 'TD', 'BT'])  # randomly select layout direction
         # direction = config['graph'].get('direction', 'TD')
         dot.attr(rankdir=direction)
 
@@ -62,23 +62,26 @@ class GraphvizRenderer(IGraphRenderer):
 
         node_dict = {n['id']: n for n in nodes}
 
-        # 1. 添加主图中非嵌套节点
+        # 1. add non-nested nodes in the main graph
         for node in nodes:
             if node['id'] not in nested_node_ids:
                 self._add_node(dot, node, shape_map)
 
-        # 预定义随机颜色池（可自定义丰富，十六进制颜色码）
-        subgraph_color_pool = ['#F5E8C7', '#DAF7A6', '#FFC300', '#FF5733', '#C70039', '#900C3F', '#581845', '#4CAF50', '#2196F3', '#FFEB3B', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#00BCD4', '#009688', '#8BC34A', '#CDDC39', '#FFC107', '#FF9800', '#FF5722', '#795548', '#9E9E9E', '#607D8B']
+        # Predefined random color pool (hex codes, can be extended)
+        subgraph_color_pool = ['#F5E8C7', '#DAF7A6', '#FFC300', '#FF5733', '#C70039', '#900C3F', '#581845',
+                               '#4CAF50', '#2196F3', '#FFEB3B', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5',
+                               '#00BCD4', '#009688', '#8BC34A', '#CDDC39', '#FFC107', '#FF9800', '#FF5722',
+                               '#795548', '#9E9E9E', '#607D8B']
 
-        # 2. 添加嵌套子图和锚点节点
+        # 2. add nested subgraphs and anchor nodes
         for subgraph_cfg in subgraphs:
             sg_id = subgraph_cfg['id']
             label = subgraph_cfg.get('label', sg_id)
             
-            # 随机选择一个填充颜色
+            # randomly select a fill color
             fill_color = random.choice(_PRESET_COLORS)
 
-            # 添加锚点虚节点：用于连接边到整个子图
+            # add anchor virtual node: used to connect edges to the entire subgraph
             anchor_id = f'subgraph_anchor_{sg_id}'
             dot.node(anchor_id, label='', shape='point', width='0.01', height='0.01', style='invis')
 
@@ -86,14 +89,14 @@ class GraphvizRenderer(IGraphRenderer):
                 fontname = "Comic Sans MS" if subgraph_cfg.get('font') == 'handwritten' else "Helvetica"
                 sub.attr(
                     label=label,
-                    style='rounded,filled,dashed',  # 增加 'filled' 样式
+                    style='rounded,filled,dashed',  # add 'filled' style
                     color='gray50',
                     fontsize='10',
                     labelloc='t',
                     labeljust='l',
                     pencolor='gray50',
                     penwidth='1.5',
-                    fillcolor=fill_color,  # 设置随机填充颜色
+                    fillcolor=fill_color,  # set random fill color
                     fontname=fontname
                 )
                 for nid in subgraph_cfg['nodes']:
@@ -105,10 +108,10 @@ class GraphvizRenderer(IGraphRenderer):
                     if edge['from'] in subgraph_cfg['nodes'] and edge['to'] in subgraph_cfg['nodes']:
                         self._add_edge(sub, edge)
 
-        # 3. 添加跨子图边（含锚点连接）
+        # 3. add cross-subgraph edges (with anchor connections)
         for edge in edges:
             if edge['from'] in nested_node_ids and edge['to'] in nested_node_ids:
-                continue  # 已在子图中处理
+                continue  # already handled inside subgraph
 
             from_id = self._map_anchor(edge['from'], subgraph_ids)
             to_id = self._map_anchor(edge['to'], subgraph_ids)
@@ -119,7 +122,7 @@ class GraphvizRenderer(IGraphRenderer):
             os.makedirs(output_dir, exist_ok=True)
 
         try:
-            # ✅ 渲染成功时保存 DOT 源代码
+            # ✅ save DOT source code on successful render
             dot_source_path = file_root + ".dot"
             with open(dot_source_path, 'w', encoding='utf-8') as f_dot:
                 f_dot.write(dot.source)
@@ -129,13 +132,13 @@ class GraphvizRenderer(IGraphRenderer):
                 dot.render(filename=file_root, cleanup=True, view=False)
                 print(f"[Graphviz] Graph saved to {out_path}")
                 
-                # 如果启用了扫描风格
+                # if scanned style is enabled
                 if config['graph'].get('scanned', False):
-                    # 新建输出路径：原路径加 `_scanned` 后缀
+                    # new output path: original + `_scanned` suffix
                     base, ext = os.path.splitext(out_path)
                     scanned_path = base + "_scanned" + ext
 
-                    # 拷贝原图（因为我们不覆盖原图）
+                    # copy original image (do not overwrite original)
                     copyfile(out_path, scanned_path)
                     apply_scanned_style(scanned_path, config['graph']['scanned'], backend_name)
 
@@ -170,7 +173,7 @@ class GraphvizRenderer(IGraphRenderer):
         }
 
         if node_type in ['vnode']:
-            # node_attrs['shape'] = 'circle'
+            # special tiny invisible node
             node_attrs['width'] = '0.1'
             node_attrs['height'] = '0.1'
             node_attrs['fixedsize'] = 'true'
@@ -183,9 +186,9 @@ class GraphvizRenderer(IGraphRenderer):
         if stroke_color:
             node_attrs['color'] = stroke_color
             
-        # ✅ 设置字体样式
+        # ✅ set font style
         if node.get('font') == 'handwritten':
-            node_attrs['fontname'] = "Comic Sans MS"  # 或 "Segoe Print", "Bradley Hand", "Pacifico"
+            node_attrs['fontname'] = "Comic Sans MS"  # or "Segoe Print", "Bradley Hand", "Pacifico"
 
         graph.node(nid, **node_attrs)
 
@@ -197,23 +200,23 @@ class GraphvizRenderer(IGraphRenderer):
         if edge_label:
             edge_attrs['label'] = edge_label
 
-        # 提取颜色、线宽、虚线设置
-        stroke_color = edge.get('color', {}).get('stroke', '#000000')  # 加默认值防止报错
+        # extract color, width, dash style
+        stroke_color = edge.get('color', {}).get('stroke', '#000000')  # default value to prevent errors
         stroke_width = edge_style.get('penwidth', '1.5px')
 
-        # 设置颜色
+        # set color
         edge_attrs['color'] = stroke_color
-        # 设置线宽（去掉px单位）
+        # set pen width (remove px unit)
         edge_attrs['penwidth'] = stroke_width.replace('px', '')
-        # 设置线条样式
+        # set edge style
         edge_attrs['style'] = edge_style.get('style', 'solid')
 
-        # ✅ 设置箭头方向（默认 forward）
+        # ✅ set arrow direction (default forward)
         edge_attrs['dir'] = edge_style.get('dir', 'forward')
 
-        # ✅ 设置字体样式（可选）
+        # ✅ set font style (optional)
         if edge.get('font') == 'handwritten':
             edge_attrs['fontname'] = "Comic Sans MS"
 
-        # 添加边
+        # add edge
         graph.edge(edge['from'], edge['to'], **edge_attrs)

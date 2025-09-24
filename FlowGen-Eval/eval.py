@@ -10,35 +10,35 @@ Triple = Tuple[str, str, str]
 def normalize_text(text: str) -> str:
     if text is None:
         return ""
-    # 转小写
+    # convert to lowercase
     text = text.lower()
 
-    # 去掉特殊不可见字符（空格类）
+    # remove special invisible characters (whitespace-like)
     text = re.sub(r"[\u00a0\u200b\u200c\u200d\ufeff]", "", text)
 
-    # 去掉常见标点符号
+    # remove common punctuation
     text = re.sub(r"[`~!@#$%^&*()\-+=\[\]{};:'\",.<>?/\\|]", "", text)
 
-    # 下划线转空格
+    # replace underscores with spaces
     text = text.replace("_", " ")
 
-    # 去掉所有空格（如果想保留词间空格，可以改成 re.sub(r"\s+", " ", text)）
+    # remove all whitespaces (if you want to keep spaces between words, use re.sub(r"\s+", " ", text))
     text = re.sub(r"\s+", "", text)
 
     return text.strip()
 
 
 def parse_triple_line(line: str) -> Optional[Triple]:
-    # 去除行首尾空白
+    # remove leading and trailing whitespace
     line = line.strip()
-    # 检查是否符合三元组格式（以<开头，以>结尾）
+    # check if it is in triple format (<...>)
     if not line.startswith('<') or not line.endswith('>'):
         return None
     
-    # 提取尖括号内的内容
+    # extract the content inside <...>
     content = line[1:-1].strip()
     
-    # 解析三个元素
+    # parse the three elements
     parts = []
     current = []
     in_quote = None
@@ -60,17 +60,17 @@ def parse_triple_line(line: str) -> Optional[Triple]:
         elif char == ',' and in_quote is None:
             parts.append(''.join(current).strip())
             current = []
-        elif char == "，" and in_quote is None:
+        elif char == "，" and in_quote is None:  # support Chinese comma as well
             parts.append(''.join(current).strip())
             current = []
         else:
             current.append(char)
     
-    # 添加最后一个元素
+    # add the last element
     if current or parts:
         parts.append(''.join(current).strip())
     
-    # 检查是否成功解析出三个元素
+    # check if we got exactly three elements
     if len(parts) != 3:
         return None
     
@@ -86,7 +86,7 @@ def parse_triple_line(line: str) -> Optional[Triple]:
 def load_gt_triples(txt_path: str) -> Set[Triple]:
     triples = set()
     if not os.path.exists(txt_path):
-        print(f"[!] 找不到标注文件: {txt_path}")
+        print(f"[!] Ground truth file not found: {txt_path}")
         return triples
     with open(txt_path, 'r', encoding='utf-8') as f:
         for line in f:
@@ -99,10 +99,10 @@ def load_gt_triples(txt_path: str) -> Set[Triple]:
 def parse_response_lines(response: str) -> Set[Triple]:
     triples = set()
 
-    # 优先提取被反引号包裹的 <...> 三元组
+    # first try to extract triples wrapped in backticks `<...>`
     matches = re.findall(r'`<\s*([^<>]+?)\s*>`', response)
 
-    # 如果没有找到被反引号包裹的三元组，退而求其次提取普通尖括号形式
+    # if not found, fall back to plain <...> triples
     if not matches:
         matches = re.findall(r'<\s*([^<>]+?)\s*>', response)
 
@@ -124,7 +124,7 @@ def precision_recall_f1(pred: Set[Triple], gold: Set[Triple]):
     return prec, rec, f1
 
 def main():
-    parser = argparse.ArgumentParser(description="Process test dataset JSON files.")
+    parser = argparse.ArgumentParser(description="Evaluate extracted triples against ground truth.")
     parser.add_argument("--input_json", type=str, required=True, help="Path to input JSON file")
     parser.add_argument("--output_json", type=str, required=True, help="Path to output JSON file")
     args = parser.parse_args()
@@ -185,7 +185,7 @@ def main():
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✅ 已保存评估结果到 {output_json}")
+    print(f"\n✅ Evaluation results saved to {output_json}")
 
 if __name__ == "__main__":
     main()
