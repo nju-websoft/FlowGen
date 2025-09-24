@@ -6,18 +6,19 @@ FlowGen is a controllable flowchart synthesizer that generates diagrams with tun
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowchartBench) is publicly available on Hugging Face. It contains:
-- [`train`]: 11520 samples
-- [`test`]: 8640 samples
+- [`train`]: 11520 samples with gold-standard triplt
+- [`test`]: 8640 samples with gold-standard triplt
 
 ---
 
 
 ## 👋 Flowchart Synthesizer
 We provide an automated pipeline for synthesizing flowcharts with different structural configurations. The generator supports four rendering backends:
-- Mermaid  
-- Graphviz  
-- PlantUML  
-- Diagrams  
+- [`Mermaid`](https://mermaid-js.github.io/)
+
+- [`Graphviz`](https://graphviz.org/)
+- [`PlantUML`](https://plantuml.com/)
+- [`Diagrams`](https://diagrams.mingrammer.com/)
 
 ### Configuration
 Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`](Synthesizer/examples.yaml). The following parameters are supported:
@@ -30,7 +31,7 @@ Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`](Synt
 - `nest`: number of nested subgraphs  
 - `density`: edge-to-node ratio  
 
-Semantic domains, node/edge names, and style definitions can be specified in [`Synthesizer/my_dictionary.py`](Synthesizer/my_dictionary.py).  
+Semantic domains, node/edge names and shapes, and style/color definitions can be specified in [`Synthesizer/my_dictionary.py`](Synthesizer/my_dictionary.py).  
 
 Rendering implementations for all four backends are located in [`Synthesizer/renderers/`](Synthesizer/renderers/).  
 
@@ -44,11 +45,11 @@ To generate flowcharts, first configure `examples.yaml`. Then run:
 python main.py examples.yaml --backend mermaid --difficulty easy --start_index 201
 ```
 Arguments:
-- --backend: specify the renderer (e.g., mermaid, graphviz, plantuml, diagrams)
+- --backend (optional): specify the renderer (e.g., mermaid, graphviz, plantuml, diagrams)
 
 - --difficulty (optional): specify structural difficulty of the graph
 
-- --start_index: starting index for naming generated flowcharts
+- --start_index (optional): starting index for naming generated flowcharts
 
 ---
 
@@ -69,6 +70,13 @@ cd Qwen2-VL-Finetune
 bash scripts/finetune_lora_vision.sh
 ```
 ## 🚀 Inference
+### ⚡ Inference Framework
+We conduct inference for MLLMs using [Swift](https://swift.readthedocs.io/en/v3.6/), with [vLLM](https://github.com/vllm-project/vllm) as the backend for efficient acceleration.  
+For detailed usage and configuration, please refer to the official documentation.
+
+You may also check the provided script for a practical example:  
+[`FlowGen-Eval/inference.sh`](FlowGen-Eval/inference.sh)
+
 You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train split) on public flowchart datasets using **Strict F1**:
 ```
 cd FlowGen-Eval
