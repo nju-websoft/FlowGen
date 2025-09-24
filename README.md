@@ -1,4 +1,4 @@
-# 🌟 FlowGen
+# 🌟 FlowGen: FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning
 
 FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 
@@ -8,6 +8,15 @@ FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with t
 The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowGen) is publicly available on Hugging Face. It contains:
 - [`train`]: 11520 samples with gold-standard triplet
 - [`test`]: 8640 samples with gold-standard triplet
+
+Each dataset sample includes:
+
+- Rendered flowchart images (PNG)
+- Flowchart render code in different renderers (Mermaid, Graphviz, PlantUML, Diagrams)
+
+- Structured triplets <node, label, node> representing graph topology
+
+This dataset is primarily designed for flowchart parsing and flowchart question answering (flowchart QA) research, while also supporting MLLMs training and test graph-based reasoning tasks.
 
 ---
 
@@ -54,23 +63,24 @@ Arguments:
 
 ---
 
-## 🛠️ Code-to-Triplet Parser
-This repository provides a parser that extracts structured triplet from rendered flowchart code.
+### 🛠️ Code-to-Triplet Parser
+This repository provides a parser that extracts structured triplet <node, label, node> from rendered flowchart code.
 The parser automatically detects the backend from the file suffix.
 
 Run the following command, where `/path/to/dataset` is the root directory of synthesized flowcharts:
-```
+```bash
 python batch_extract_triples.py /path/to/datset
 ```
+The extracted triplets can be used directly for model training and test.
 ## 🔥 MLLMs Training
 Fine-tuning scripts are provided for multimodal large language models (MLLMs).
 After configuring your model path and path to dataset in json format, run:
-```
+```bash
 cd MLLMs-SFT
 cd Qwen2-VL-Finetune
 bash scripts/finetune_lora_vision.sh
 ```
-## 🚀 Inference
+## 🚀 MLLMs Testing
 ### ⚡ Inference Framework
 We conduct inference for MLLMs using [Swift](https://swift.readthedocs.io/en/v3.6/), with [vLLM](https://github.com/vllm-project/vllm) as the backend for efficient acceleration.  
 For detailed usage and configuration, please refer to the official documentation.
@@ -81,12 +91,12 @@ You may also check the provided script for a practical example:
 ---
 
 You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train split) on public flowchart datasets using **Strict F1**:
-```
+```bash
 cd FlowGen-Eval
 python eval.py --/path/to/input.json --/path/to/output.json
 ```
 We also provide evaluation with **Relaxed F1**:
-```
+```bash
 cd FlowGen-Eval
 python edit_sim.py --/path/to/input.json --/path/to/output.json
 ```
