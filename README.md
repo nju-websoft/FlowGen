@@ -5,7 +5,7 @@ FlowGen is a controllable flowchart synthesizer that generates diagrams with tun
 
 
 ## 📂 FlowGen Dataset
-The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowchartBench) is publicly available on Hugging Face. It contains:
+The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowGen) is publicly available on Hugging Face. It contains:
 - [`train`]: 11520 samples with gold-standard triplt
 - [`test`]: 8640 samples with gold-standard triplt
 
