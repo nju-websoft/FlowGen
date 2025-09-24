@@ -1,5 +1,5 @@
 import os
-from triples_parser_v2 import parse_to_triples, detect_backend
+from triples_parser import parse_to_triples, detect_backend
 from typing import List, Tuple
 
 Triple = Tuple[str, str, str]

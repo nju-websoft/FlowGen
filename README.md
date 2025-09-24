@@ -1,5 +1,9 @@
 # FlowGen
 
+FlowGen is a controllable flowchart synthesizer that generates diagrams with tunable structural features and supports multiple rendering styles.
+
+
+
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowchartBench) is publicly available on Hugging Face. It contains:
 - [`train`]: 11520 samples
@@ -16,7 +20,7 @@ We provide an automated pipeline for synthesizing flowcharts with different stru
 - Diagrams  
 
 ### Configuration
-Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`]. The following parameters are supported:
+Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`](Synthesizer/examples.yaml). The following parameters are supported:
 
 - `count`: number of flowcharts to generate  
 - `order`: number of nodes  
@@ -26,9 +30,9 @@ Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`]. The
 - `nest`: number of nested subgraphs  
 - `density`: edge-to-node ratio  
 
-Semantic domains, node/edge names, and style definitions can be specified in [`Synthesizer/my_dictionary.py`].  
+Semantic domains, node/edge names, and style definitions can be specified in [`Synthesizer/my_dictionary.py`](Synthesizer/my_dictionary.py).  
 
-Rendering implementations for all four backends are located in [`Synthesizer/renderers/`].  
+Rendering implementations for all four backends are located in [`Synthesizer/renderers/`](Synthesizer/renderers/).  
 
 
 
@@ -56,11 +60,22 @@ Run the following command, where `/path/to/dataset` is the root directory of gen
 ```
 python batch_extract_triples.py /path/to/datset
 ```
-## 🚀 MLLMs Training
+## 🔥 MLLMs Training
 Fine-tuning scripts are provided for multimodal large language models (MLLMs).
 After configuring your model path and dataset JSON, run:
 ```
 cd MLLMs-SFT
 cd Qwen2-VL-Finetune
 bash scripts/finetune_lora_vision.sh
+```
+## 🚀 Inference
+You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train split) on public flowchart datasets using **Strict F1**:
+```
+cd FlowGen-Eval
+python eval.py --/path/to/input.json --/path/to/output.json
+```
+We also provide evaluation with Relaxed F1:
+```
+cd FlowGen-Eval
+python edit_sim.py --/path/to/input.json --/path/to/output.json
 ```
