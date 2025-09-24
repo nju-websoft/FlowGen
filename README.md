@@ -1,4 +1,4 @@
-# FlowGen
+# 🌟FlowGen
 
 FlowGen is a controllable flowchart synthesizer that generates diagrams with tunable structural features and supports multiple rendering styles.
 
@@ -76,6 +76,8 @@ For detailed usage and configuration, please refer to the official documentation
 
 You may also check the provided script for a practical example:  
 [`FlowGen-Eval/inference.sh`](FlowGen-Eval/inference.sh)
+
+---
 
 You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train split) on public flowchart datasets using **Strict F1**:
 ```
