@@ -23,10 +23,7 @@ This dataset is primarily designed for flowchart parsing and flowchart question 
 
 ## 👋 Flowchart Synthesizer
 We provide an automated pipeline for synthesizing flowcharts with different structural configurations. The synthesizer supports four rendering backends:
-- [`Mermaid`](https://mermaid-js.github.io/)
-- [`Graphviz`](https://graphviz.org/)
-- [`PlantUML`](https://plantuml.com/)
-- [`Diagrams`](https://diagrams.mingrammer.com/)
+- [`Mermaid`](https://mermaid-js.github.io/), [`Graphviz`](https://graphviz.org/), [`PlantUML`](https://plantuml.com/), [`Diagrams`](https://diagrams.mingrammer.com/)
 
 ### Configuration
 Flowchart synthesis is fully customizable via [`Synthesizer/examples.yaml`](Synthesizer/examples.yaml). The following parameters are supported:
@@ -61,9 +58,10 @@ Arguments:
 
 - --start_index (optional): starting index for naming synthesized flowcharts
 
----
 
-### 🛠️ Code-to-Triplet Parser
+
+<!-- ###   -->
+#### 🛠️ Code-to-Triplet Parser
 This repository provides a parser that extracts structured triplet <node, label, node> from rendered flowchart code.
 The parser automatically detects the backend from the file suffix.
 
@@ -72,6 +70,9 @@ Run the following command, where `/path/to/dataset` is the root directory of syn
 python batch_extract_triples.py /path/to/datset
 ```
 The extracted triplets can be used directly for model training and test.
+
+---
+
 ## 🔥 MLLMs Training
 Fine-tuning scripts are provided for multimodal large language models (MLLMs).
 After configuring your model path and path to dataset in json format, run:
