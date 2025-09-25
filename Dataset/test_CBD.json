@@ -1,0 +1,1058 @@
+[
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break77.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break78.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break79.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break80.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break81.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break82.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break83.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break84.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break85.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break86.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break87.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break88.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break89.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break90.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break91.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break92.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break93.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break94.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Break95.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect100.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect101.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect102.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect103.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect104.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect105.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect106.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect107.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect108.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect87.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect88.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect89.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect90.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect91.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect92.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect93.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect94.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect95.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect96.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect97.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect98.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Connect99.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal246.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal247.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal248.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal249.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal250.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal251.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal252.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal253.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal254.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal255.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal256.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal257.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal258.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal259.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal260.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal261.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal262.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal263.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal264.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal265.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal266.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal267.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal268.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal269.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal270.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal271.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal272.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal273.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal274.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal275.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal276.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal277.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal278.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal279.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal280.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal281.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal282.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal283.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal284.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal285.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal286.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal287.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal288.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal289.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal290.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal291.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal292.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal293.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal294.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal295.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal296.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal297.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal298.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal299.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  },
+  {
+    "images": [
+      "./Block-Diagram-Datasets/Computerized_block_diagrams/test_img/Normal300.png"
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>Please describe all the information in the flowchart image in the form of triples: For each arrow labeled with X directed from node A to node B, output a triple: <A, X, B>; For each unlabeled arrow directed from node A to node B, output a triple: <A, connectedTo, B>; For each node A fully inside node group B, output a triple <A, partOf, B>. The following triples are example outputs: <Food Packaging Improvement, secures, Quantum Computing Integration>\n<Graphene Production, catalyzes, Nanosensors>\n<Graphene Production, partOf, Drug Delivery Systems>\n<Nanocomposites, connectedTo, Spectroscopy>\n<Nanodevice Fabrication, connectedTo, Graphene Production>\n<Nanosensors, connectedTo, Nanocomposites>\n<Spectroscopy, educates, Nanodevice Fabrication>"
+      }
+    ]
+  }
+]
