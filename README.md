@@ -116,12 +116,12 @@ bash scripts/finetune_lora_vision.sh
 We conduct inference for MLLMs using [Swift](https://swift.readthedocs.io/en/v3.6/), with [vLLM](https://github.com/vllm-project/vllm) as the backend for efficient acceleration.  
 For detailed usage and configuration, please refer to the official documentation.
 
-You may also check the provided script for a practical example:  
-[`FlowGen-Eval/inference.sh`](FlowGen-Eval/inference.sh)
+You may also check the provided script for a practical example: 
+[`./FlowGen-Eval/inference.sh`](FlowGen-Eval/inference.sh)
 
 ---
 
-You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train split) on public flowchart datasets using **Strict F1**:
+You can evaluate both the **base model** and the **FlowGen-SFT model** (fine-tuned on the FlowGen train set) on public flowchart datasets using **Strict F1**:
 ```bash
 cd FlowGen-Eval
 python eval.py --/path/to/input.json --/path/to/output.json
@@ -131,3 +131,5 @@ We also provide evaluation with **Relaxed F1**:
 cd FlowGen-Eval
 python edit_sim.py --/path/to/input.json --/path/to/output.json
 ```
+
+In addition, we place several testing examples of Responses and Strict F1 results for both the base model and the SFT model in the [`./Results`](./Results/) folder.
