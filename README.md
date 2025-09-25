@@ -5,7 +5,7 @@ FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with t
 
 
 ## 📂 FlowGen Dataset
-The [FlowGen datasets](https://huggingface.co/datasets/Sorrystopper/FlowGen) is publicly available on Hugging Face. It contains:
+The [FlowGen datasets](https://huggingface.co/datasets/Anonymous112233/FlowGen) is publicly available on Hugging Face. It contains:
 - [`train`]: 11520 samples with gold-standard triplet
 - [`test`]: 8640 samples with gold-standard triplet
 
@@ -19,8 +19,8 @@ Each dataset sample includes:
 This dataset is primarily designed for flowchart parsing and flowchart question answering (flowchart QA) research, while also supporting MLLMs training and test graph-based reasoning tasks.
 
 ### 📥 Download and Local Setup
-1. Download the FlowGen dataset from Hugging Face: [FlowGen](https://huggingface.co/datasets/Sorrystopper/FlowGen).  
-2. Place the downloaded dataset into a local folder named `Dataset`. In this folder, we provide six preprocessed open-source JSON datasets for flowchart parsing. You can process our FlowGen dataset in the same JSON format.
+1. Download the FlowGen dataset from Hugging Face: [FlowGen](https://huggingface.co/datasets/Anonymous112233/FlowGen).  
+2. Place the downloaded dataset into a local folder named `Dataset`. In this folder, we provide six preprocessed public datasets in JSON format for flowchart parsing. You can process our FlowGen dataset in the same JSON format.
 3. For convenience, pre-processing scripts are provided in [./Dataset-JSON](./Dataset-JSON/) to convert training and test samples into JSON format with specified task prompts.  
    - You can run these scripts to generate JSON files that ready for training or evaluation.
 
