@@ -111,6 +111,15 @@ After configuring your model path and path to dataset in json format, run:
 cd ./MLLMs-SFT/Qwen2-VL-Finetune
 bash scripts/finetune_lora_vision.sh
 ```
+#### 📌 Key parameters you can adjust:
+- learning_rate: learning rate for fine-tuning.
+- lora_rank: rank of LoRA adapters (controls trainable parameter size).
+- weight_decay: weight decay coefficient for regularization.
+- warmup_ratio: proportion of training steps used for learning rate warm-up.
+- lr_scheduler_type: learning rate scheduling strategy (e.g., cosine).
+- output_dir: folder to save checkpoints and logs.
+---
+
 ## 🚀 MLLMs Testing
 #### ⚡ Inference Framework
 We conduct inference for MLLMs using [Swift](https://swift.readthedocs.io/en/v3.6/), with [vLLM](https://github.com/vllm-project/vllm) as the backend for efficient acceleration.  
