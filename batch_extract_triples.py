@@ -49,7 +49,7 @@ def process_dataset_inplace(root_dir: str):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("root_dir", type=str, help="FlowGen 数据集的根目录")
+    parser.add_argument("root_dir", type=str, help="FlowGen root dir")
     args = parser.parse_args()
 
     process_dataset_inplace(args.root_dir)

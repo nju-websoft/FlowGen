@@ -91,7 +91,6 @@ def parse_mermaid(file_path: str) -> List[Triple]:
             node_id = node_def_match.group(1)
             node_label = node_def_match.group(2).strip()
 
-            # 去掉外围的 / 或 \
             node_label = re.sub(r'^[/\\]+|[/\\]+$', '', node_label).strip()
             if not node_label:
                 node_label = node_id
@@ -161,27 +160,24 @@ def parse_graphviz(file_path: str) -> List[Triple]:
         if not line or line.startswith('//'):
             continue
 
-        # 进入子图
         match = subgraph_start_pattern.match(line)
         if match:
             current_group_id = match.group(1)
             current_group_label = None
             continue
 
-        # 退出子图
         if line == "}":
             current_group_id = None
             current_group_label = None
             continue
 
-        # 在子图范围内，持续尝试提取 label（保证即使在后几行也能获取到）
         if current_group_id:
             label_match = label_pattern.search(line)
             if label_match:
                 current_group_label = label_match.group(1) or label_match.group(2)
                 node_id_to_label[current_group_id] = current_group_label
 
-        # 匹配节点
+        # match nodes
         node_match = node_pattern.match(line)
         if node_match:
             node_id, attr_str = node_match.groups()
@@ -197,7 +193,7 @@ def parse_graphviz(file_path: str) -> List[Triple]:
             else:
                 node_id_to_label[node_id] = node_id
 
-            # 如果子图有 label，就添加 partOf 关系
+            # if subgraph has label, add partOf
             if current_group_label:
                 node_label = node_id_to_label[node_id]
                 if (node_label, current_group_label) not in processed_contains:
@@ -205,7 +201,7 @@ def parse_graphviz(file_path: str) -> List[Triple]:
                     processed_contains.add((node_label, current_group_label))
             continue
 
-        # 匹配边
+        # match edge
         edge_match = edge_pattern.match(line)
         if edge_match:
             src, tgt, attr_str = edge_match.groups()
