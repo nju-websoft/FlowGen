@@ -7,12 +7,18 @@
   <a href="README.md">English</a> | <a href="README_ZH.md">中文</a>
 </p>
 
-FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR-2026-blue?style=for-the-badge&logo=openreview)](https://openreview.net/forum?id=uimrBBfDCH)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-FigureBench-orange?style=for-the-badge)](https://huggingface.co/datasets/Anonymous112233/FlowGen)
+<p align="center">
+FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
+</p>
+[[`Paper`](https://openreview.net/forum?id=uimrBBfDCH)]
+[[`Project`](https://github.com/nju-websoft/FlowGen)]
+[[`BibTeX`](#-citation--license)]
+</div>
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Anonymous112233/FlowGen) is publicly available on Hugging Face. It contains:
@@ -154,3 +160,14 @@ python edit_sim.py --/path/to/input.json --/path/to/output.json
 In addition, we place several testing examples of Responses and Strict F1 results for both the base model and the SFT model in the [`./Results`](./Results/) folder.
 
 <!-- ## Acknowledge -->
+```bibtex
+@inproceedings{
+shi2026flowgen,
+title={FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark {MLLM} Reasoning},
+author={Kaiwen Shi and Sichen Liu and Ziyue Lin and Hangrui Guo and Gong Cheng},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=uimrBBfDCH}
+}
+```
+This project is licensed under the MIT License - see `LICENSE` for details.
