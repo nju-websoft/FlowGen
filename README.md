@@ -1,10 +1,18 @@
-# 🌟 FlowGen: FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning
+<div align="center">
+
+# 🌟 FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning [ICLR 2026]
+
+<img src="img/Overview.png" alt="FlowGen Overview" width="100%"/>
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_ZH.md">中文</a>
+</p>
 
 FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 
-## 📰 News
-
-* **[2026.01.26]**  🔥🔥 FlowGen was accepted by ICLR 2026 ！！
+[![ICLR 2026](https://img.shields.io/badge/ICLR-2026-blue?style=for-the-badge&logo=openreview)](https://openreview.net/forum?id=uimrBBfDCH)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-FigureBench-orange?style=for-the-badge)](https://huggingface.co/datasets/Anonymous112233/FlowGen)
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Anonymous112233/FlowGen) is publicly available on Hugging Face. It contains:
@@ -145,8 +153,4 @@ python edit_sim.py --/path/to/input.json --/path/to/output.json
 
 In addition, we place several testing examples of Responses and Strict F1 results for both the base model and the SFT model in the [`./Results`](./Results/) folder.
 
-## Acknowledge
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+<!-- ## Acknowledge -->
