@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌟 FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning [ICLR 2026]
+# 🌟 FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning [ICLR 2026 🔥🔥]
 
 <img src="img/Overview.png" alt="FlowGen Overview" width="100%"/>
 <p align="center">
@@ -176,4 +176,4 @@ year={2026},
 url={https://openreview.net/forum?id=uimrBBfDCH}
 }
 ```
-This project is licensed under the MIT License - see `LICENSE` for details.
+This project is licensed under the MIT License.
