@@ -2,10 +2,10 @@
 
 # 🌟 FlowGen: Synthesizing Diverse Flowcharts to Enhance and Benchmark MLLM Reasoning [ICLR 2026 🔥🔥]
 
-<img src="img/Overview.png" alt="FlowGen Overview" width="100%"/>
-<p align="center">
+<img src="./img/Overview.png" alt="FlowGen Overview" width="100%"/>
+<!-- <p align="center">
   <a href="README.md">English</a> | <a href="README_ZH.md">中文</a>
-</p>
+</p> -->
 
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR-2026-blue?style=for-the-badge&logo=openreview)](https://openreview.net/forum?id=uimrBBfDCH)
