@@ -144,3 +144,8 @@ python edit_sim.py --/path/to/input.json --/path/to/output.json
 ```
 
 In addition, we place several testing examples of Responses and Strict F1 results for both the base model and the SFT model in the [`./Results`](./Results/) folder.
+
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
