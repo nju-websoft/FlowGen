@@ -15,10 +15,14 @@
 <p align="center">
 FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 </p>
+
 [[`Paper`](https://openreview.net/forum?id=uimrBBfDCH)]
 [[`Project`](https://github.com/nju-websoft/FlowGen)]
 [[`BibTeX`](#-citation--license)]
+
 </div>
+
+---
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Anonymous112233/FlowGen) is publicly available on Hugging Face. It contains:
@@ -159,7 +163,9 @@ python edit_sim.py --/path/to/input.json --/path/to/output.json
 
 In addition, we place several testing examples of Responses and Strict F1 results for both the base model and the SFT model in the [`./Results`](./Results/) folder.
 
+---
 <!-- ## Acknowledge -->
+## 📜 Citation & License
 ```bibtex
 @inproceedings{
 shi2026flowgen,
