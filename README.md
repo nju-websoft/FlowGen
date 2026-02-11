@@ -2,7 +2,9 @@
 
 FlowGen is a controllable flowchart synthesizer that synthesizes diagrams with tunable structural features and supports multiple rendering styles.
 
+## 📰 News
 
+* **[2026.01.26]**  🔥🔥 FlowGen was accepted by ICLR 2026 ！！
 
 ## 📂 FlowGen Dataset
 The [FlowGen datasets](https://huggingface.co/datasets/Anonymous112233/FlowGen) is publicly available on Hugging Face. It contains:
